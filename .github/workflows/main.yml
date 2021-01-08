@@ -30,8 +30,8 @@ jobs:
 
       # Installs Surge
       - name: Install surge
-        run: npm install --global surge
+        run: npm install -g surge
 
       # Deploys to Surge
       - name: Deploy to surge
-        run: surge . eth-expense-tracker-app.surge.sh
+        run: surge ./ eth-expense-tracker-app.surge.sh --token ${{secret.SURGE_TOKEN}}
