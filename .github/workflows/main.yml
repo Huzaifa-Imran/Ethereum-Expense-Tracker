@@ -34,4 +34,4 @@ jobs:
 
       # Deploys to Surge
       - name: Deploy to surge
-        run: surge ./ eth-expense-tracker-app.surge.sh --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./ ethereum-expense-tracker.surge.sh --token ${{secrets.SURGE_TOKEN}}
