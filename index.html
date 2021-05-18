@@ -152,7 +152,7 @@
         ];
         const loadBlockchain = async () => {
             try {
-                if (window.ethereum) {
+                if (Web3.givenProvider) {
                     // Loading web3
                     await window.ethereum.enable();
                     web3 = new Web3(window.ethereum || 'http://localhost:7545');
